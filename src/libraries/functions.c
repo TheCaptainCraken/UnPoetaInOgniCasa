@@ -4,7 +4,8 @@
 #include <ctype.h>
 #include "functions.h"
 
-int CalcolaCompatibilita(char* verso1, char* verso2) {
+int CalcolaCompatibilita(char* verso1, char* verso2)
+{
     //calcola la lunghezza di ogni stringa
     int len1 = strlen(verso1);
     int len2 = strlen(verso2);
@@ -17,7 +18,8 @@ int CalcolaCompatibilita(char* verso1, char* verso2) {
     else { return 1; }
 }
 
-int CheckInRima(char* verso1, char* verso2) {
+int CheckInRima(char* verso1, char* verso2)
+{
     return 0;
 }
 
