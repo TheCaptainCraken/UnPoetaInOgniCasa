@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\libraries"
   ],
-  "SelectedNode": "\\src\\main.c",
   "PreviewInSolutionExplorer": false
 }
