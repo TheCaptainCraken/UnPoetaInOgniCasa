@@ -18,9 +18,13 @@ int CalcolaCompatibilita(char* verso1, char* verso2) {
 	return (perc_len_diff <= 20);
 }
 
-int CheckInRima(char* verso1, char* verso2) {
-	/*NON IMPLEMENTATO*/
-	return 0;
+int CheckInRima(char* verso1, char* verso2)
+{
+	size_t s1 = strlen(verso1);
+	size_t s2 = strlen(verso2);
+
+	/* Non è vero quasi mai vero che due versi sono in rima se le ultime 3 lettere sono uguali ma vabbè */
+	return (s1 >= 3 && s2 >= 3) && (strcmp(&verso1[s1 - 3], &verso2[s2 - 3]) == 0);
 }
 
 char* CercaRima(char* verso, char** database, size_t numero_righe) {
